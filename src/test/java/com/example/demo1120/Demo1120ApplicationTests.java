@@ -10,7 +10,7 @@ class Demo1120ApplicationTests {
 
     @Test
     void testSimpleFactoryPattern() {
-        String foodName="chicken";
+        String foodName="noodle";
         Food food = FoodFactory.getFood(foodName);
         food.printName();
     }
