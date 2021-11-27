@@ -10,9 +10,14 @@ class Demo1120ApplicationTests {
 
     @Test
     void testSimpleFactoryPattern() {
-        String foodName="noodle";
-        Food food = FoodFactory.getFood(foodName);
-        food.printName();
+        String foodName_noodle="noodle";
+        Food food_noodle = FoodFactory.getFood(foodName_noodle);
+        food_noodle.printName();
+
+        String foodName_chicken="chicken";
+        Food food_chicken = FoodFactory.getFood(foodName_chicken);
+        food_chicken.printName();
+
     }
 
 }
