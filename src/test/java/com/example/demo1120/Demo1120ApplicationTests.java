@@ -1,5 +1,6 @@
 package com.example.demo1120;
 
+import com.example.demo1120.designPattern.FactoryPattern.ChineseFoodFactory;
 import com.example.demo1120.designPattern.simpleFactoryPattern.FoodFactory;
 import com.example.demo1120.designPattern.simpleFactoryPattern.service.Food;
 import org.junit.jupiter.api.Test;
