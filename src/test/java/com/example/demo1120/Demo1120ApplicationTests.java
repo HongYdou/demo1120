@@ -6,6 +6,7 @@ import com.example.demo1120.designPattern.AbstractFactoryPattern.service.CPU;
 import com.example.demo1120.designPattern.AbstractFactoryPattern.service.Computer;
 import com.example.demo1120.designPattern.AbstractFactoryPattern.service.HardDisk;
 import com.example.demo1120.designPattern.AbstractFactoryPattern.service.MainBoard;
+import com.example.demo1120.designPattern.builderPattern.User;
 import com.example.demo1120.designPattern.simpleFactoryPattern.FoodFactory;
 import com.example.demo1120.designPattern.simpleFactoryPattern.service.Food;
 import org.junit.jupiter.api.Test;
@@ -37,6 +38,19 @@ class Demo1120ApplicationTests {
         HardDisk hardDisk = factory.makeHardDisk();
         //5、组装电脑
         Computer computer = factory.makeComputer(cpu,mainBoard,hardDisk);
+    }
+
+    @Test
+    void TestBuildFactoryPattern(){
+        User xiaoming = User.builder().name("xiaoming").build();
+        System.out.println(xiaoming);
+        User xiaoqiang = User.builder()
+                .name("xiaoqiang")
+                .nickName("xiaoming")
+                .password("123")
+                .age(12)
+                .build();
+        System.out.println(xiaoqiang);
     }
 
 }
